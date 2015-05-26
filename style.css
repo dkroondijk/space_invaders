@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-color: #ccc;
+}
+
+td {
+  width: 100px;
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+.alien {
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  background-color: red;
+  z-index: 100;
+  bottom: 200px;
+}
+
+.player {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: blue;
+  width: 30px;
+  height: 20px;
+  transition: left 0.5s;
+  z-index: 10;
+}
+
+.bullet {
+  position: absolute;
+  width: 4px;
+  height: 15px;
+  background-color: orange;
+}
