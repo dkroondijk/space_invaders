@@ -53,6 +53,11 @@ $(document).ready(function(){
       }
     });
 
+    if($('.alien').length === 0){
+      alert('You defeated the aliens!!');
+      location.reload();
+    }
+
     var aliensLeftPosition = aliens.offset().left;
     var newLeft = aliensLeftPosition + aliensMoveDirection;
     aliens.offset({left: newLeft});
